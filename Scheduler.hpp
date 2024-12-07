@@ -21,6 +21,7 @@ public:
     void PeriodicCheck(Time_t now);
     void Shutdown(Time_t now);
     void TaskComplete(Time_t now, TaskId_t task_id);
+    bool CheckMachineCompatibility(MachineInfo_t m_info, TaskInfo_t task_info);
 private:
     vector<VMId_t> vms;
     vector<MachineId_t> machines;
